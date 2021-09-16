@@ -1,0 +1,24 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+@import '_pageLayout';
+
+@import 'channelEditPage';
+
+@import '_channelLayout.scss';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.company_logo{
+
+    height: 50px;
+
+    &:hover{
+        filter: drop-shadow(0 0 0.04rem #FA2055);
+    }
+
+}

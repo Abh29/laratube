@@ -1,0 +1,102 @@
+
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #F8F8F8;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: hidden;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .hidden_sidebar-header {
+    height: 70px;
+    background: snow;
+
+    #logo_wrapper{
+       padding-top : 8px;
+       padding-left : 80px;
+    }
+    
+
+}
+
+
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+
+
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#top_navbar{
+
+    position: fixed;
+    top :0 ;
+    left : 70px;
+    padding-right: 70px;
+    padding-left: 0px;
+    z-index: 1;
+}
+
+
+#fixed_sidebar{
+
+    position: fixed;
+    top: 0 ;
+    left : 0;
+    width: 70px;
+    height: 100vh;
+    background :white;
+    text-align: center;
+
+    
+    .fixed_sidebar_icon{
+        width: 50px;
+        padding: 20px 0 20px 0;
+    
+    }
+    
+}
+
+
+
